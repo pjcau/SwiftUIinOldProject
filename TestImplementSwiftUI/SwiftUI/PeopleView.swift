@@ -43,7 +43,7 @@ struct PeopleView: View {
     var body: some View {
         ZStack {
             Color.green.edgesIgnoringSafeArea(.all)
-            QGrid(Storage.people, columns: columns, columnsInLandscape: columnsInLandscape) { GridCell(person: $0) }
+            QGrid(Storage.people, columns: columns, columnsInLandscape: columnsInLandscape) { GridCell(person: $0) }.edgesIgnoringSafeArea(.bottom)
         }
     }
 }
