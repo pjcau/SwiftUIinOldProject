@@ -13,12 +13,15 @@
 		5F6C9F3B233686BD00F5E012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6C9F3A233686BD00F5E012 /* Assets.xcassets */; };
 		5F6C9F3E233686BD00F5E012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6C9F3C233686BD00F5E012 /* LaunchScreen.storyboard */; };
 		5F6C9F4A2336902400F5E012 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C9F33233686BB00F5E012 /* SceneDelegate.swift */; };
-		5F6C9F4D2336AAD800F5E012 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C9F4C2336AAD800F5E012 /* SwiftUIView.swift */; };
 		5F6C9F512336AB5B00F5E012 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C9F4E2336AB5B00F5E012 /* Storage.swift */; };
 		5F6C9F522336AB5B00F5E012 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F6C9F4F2336AB5B00F5E012 /* people.json */; };
 		5F6C9F532336AB5B00F5E012 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C9F502336AB5B00F5E012 /* PeopleView.swift */; };
-		5F6C9F5A2336B24200F5E012 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 5F6C9F592336B24200F5E012 /* QGrid */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5F6C9F5C2336B80200F5E012 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6C9F5B2336B80200F5E012 /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5F94242E2337759C00297CA2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5F94242D2337759C00297CA2 /* Realm */; };
+		5F9424302337759C00297CA2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F94242F2337759C00297CA2 /* RealmSwift */; };
+		5F9424332337772400297CA2 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 5F9424322337772400297CA2 /* QGrid */; };
+		5F9424372337B80C00297CA2 /* RealmBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9424362337B80C00297CA2 /* RealmBindable.swift */; };
+		5F9424392337BDB200297CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6C9F562336AE0900F5E012 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +33,12 @@
 		5F6C9F3A233686BD00F5E012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6C9F3D233686BD00F5E012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6C9F3F233686BD00F5E012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F6C9F4C2336AAD800F5E012 /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		5F6C9F4E2336AB5B00F5E012 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		5F6C9F4F2336AB5B00F5E012 /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
 		5F6C9F502336AB5B00F5E012 /* PeopleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		5F6C9F562336AE0900F5E012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6C9F5B2336B80200F5E012 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5F9424362337B80C00297CA2 /* RealmBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBindable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,8 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9424332337772400297CA2 /* QGrid in Frameworks */,
+				5F9424302337759C00297CA2 /* RealmSwift in Frameworks */,
+				5F94242E2337759C00297CA2 /* Realm in Frameworks */,
 				5F6C9F5C2336B80200F5E012 /* SwiftUI.framework in Frameworks */,
-				5F6C9F5A2336B24200F5E012 /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +95,7 @@
 				5F6C9F4F2336AB5B00F5E012 /* people.json */,
 				5F6C9F502336AB5B00F5E012 /* PeopleView.swift */,
 				5F6C9F4E2336AB5B00F5E012 /* Storage.swift */,
-				5F6C9F4C2336AAD800F5E012 /* SwiftUIView.swift */,
+				5F9424362337B80C00297CA2 /* RealmBindable.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -120,7 +125,9 @@
 			);
 			name = TestImplementSwiftUI;
 			packageProductDependencies = (
-				5F6C9F592336B24200F5E012 /* QGrid */,
+				5F94242D2337759C00297CA2 /* Realm */,
+				5F94242F2337759C00297CA2 /* RealmSwift */,
+				5F9424322337772400297CA2 /* QGrid */,
 			);
 			productName = TestImplementSwiftUI;
 			productReference = 5F6C9F2E233686BB00F5E012 /* TestImplementSwiftUI.app */;
@@ -151,7 +158,8 @@
 			);
 			mainGroup = 5F6C9F25233686BB00F5E012;
 			packageReferences = (
-				5F6C9F452336886200F5E012 /* XCRemoteSwiftPackageReference "QGrid" */,
+				5F94242C2337759C00297CA2 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				5F9424312337772400297CA2 /* XCRemoteSwiftPackageReference "QGrid" */,
 			);
 			productRefGroup = 5F6C9F2F233686BB00F5E012 /* Products */;
 			projectDirPath = "";
@@ -171,6 +179,7 @@
 				5F6C9F3E233686BD00F5E012 /* LaunchScreen.storyboard in Resources */,
 				5F6C9F3B233686BD00F5E012 /* Assets.xcassets in Resources */,
 				5F6C9F39233686BB00F5E012 /* Main.storyboard in Resources */,
+				5F9424392337BDB200297CA2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +192,8 @@
 			files = (
 				5F6C9F36233686BB00F5E012 /* ViewController.swift in Sources */,
 				5F6C9F32233686BB00F5E012 /* AppDelegate.swift in Sources */,
+				5F9424372337B80C00297CA2 /* RealmBindable.swift in Sources */,
 				5F6C9F4A2336902400F5E012 /* SceneDelegate.swift in Sources */,
-				5F6C9F4D2336AAD800F5E012 /* SwiftUIView.swift in Sources */,
 				5F6C9F512336AB5B00F5E012 /* Storage.swift in Sources */,
 				5F6C9F532336AB5B00F5E012 /* PeopleView.swift in Sources */,
 			);
@@ -388,7 +397,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5F6C9F452336886200F5E012 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+		5F94242C2337759C00297CA2 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.18.0;
+			};
+		};
+		5F9424312337772400297CA2 /* XCRemoteSwiftPackageReference "QGrid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Q-Mobile/QGrid";
 			requirement = {
@@ -399,9 +416,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5F6C9F592336B24200F5E012 /* QGrid */ = {
+		5F94242D2337759C00297CA2 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5F6C9F452336886200F5E012 /* XCRemoteSwiftPackageReference "QGrid" */;
+			package = 5F94242C2337759C00297CA2 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		5F94242F2337759C00297CA2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F94242C2337759C00297CA2 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		5F9424322337772400297CA2 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F9424312337772400297CA2 /* XCRemoteSwiftPackageReference "QGrid" */;
 			productName = QGrid;
 		};
 /* End XCSwiftPackageProductDependency section */

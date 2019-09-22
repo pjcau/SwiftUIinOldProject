@@ -8,6 +8,9 @@
 
 import SwiftUI
 import QGrid
+import Realm
+import RealmSwift
+import Combine
 
 var columns: Int {
     
@@ -39,12 +42,28 @@ var columnsInLandscape: Int {
 }
 
 @available(iOS 13.0.0, *)
-struct PeopleView: View {
-    var body: some View {
-        ZStack {
-            Color.green.edgesIgnoringSafeArea(.all)
-            QGrid(Storage.people, columns: columns, columnsInLandscape: columnsInLandscape) { GridCell(person: $0) }.edgesIgnoringSafeArea(.bottom)
+struct PeopleView : View {
+    @ObservedObject var people = BindableResults(results: try! Realm().objects(Person.self))
+    
+    private var stateContent: AnyView {
+        _ = Storage()
+        
+        switch people.results.isEmpty {
+        case true:
+             return AnyView(
+                           Text("loading")
+                       )
+        default:
+            return AnyView(
+                QGrid(people.results, columns: columns, columnsInLandscape: columnsInLandscape) { GridCell(person: $0) }.edgesIgnoringSafeArea(.bottom)
+                
+            )
         }
+        
+    }
+    
+    var body: some View {
+        stateContent
     }
 }
 
